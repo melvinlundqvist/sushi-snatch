@@ -26,12 +26,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kli-dq-fEx">
+                                <rect key="frame" x="67" y="465" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eater" translatesAutoresizingMaskIntoConstraints="NO" id="wg2-KW-fjq">
+                                <rect key="frame" x="67" y="502" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="K5o-5h-dhf"/>
+                                <exclude reference="wg2-KW-fjq"/>
                             </mask>
                         </variation>
                     </view>
@@ -43,6 +52,7 @@
     </scenes>
     <resources>
         <image name="Bakgrund" width="1080" height="1920"/>
+        <image name="Eater" width="580" height="580"/>
         <image name="test" width="1080" height="1920"/>
     </resources>
 </document>
