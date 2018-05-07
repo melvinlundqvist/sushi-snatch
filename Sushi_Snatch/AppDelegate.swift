@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Sushi Snatch
+//  Sushi_Snatch
 //
-//  Created by Melvin Lundqvist on 2018-04-28.
-//  Copyright © 2018 Melvin Lundqvist. All rights reserved.
+//  Created by Philip Song on 2018-05-07.
+//  Copyright © 2018 Developers. All rights reserved.
 //
 
 import UIKit
