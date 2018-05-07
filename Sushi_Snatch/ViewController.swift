@@ -9,7 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var bakgrund: UIImageView!
+    
+    @IBOutlet weak var sushiTextlbl: UILabel! //ishidden
+    @IBOutlet weak var bakgrundStartScreen: UIImageView!
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var snatchlbl: UILabel!
+    
+    
+    
+    
+    @IBAction func playButtonIsPressed(_ sender: Any) {
+        bakgrundStartScreen.isHidden = true
+        snatchlbl.isHidden = true
+        playButton.isHidden = true
+        sushiTextlbl.isHidden = true
+    }
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
