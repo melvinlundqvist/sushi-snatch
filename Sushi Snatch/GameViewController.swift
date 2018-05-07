@@ -2,8 +2,8 @@
 //  GameViewController.swift
 //  Sushi Snatch
 //
-//  Created by Melvin Lundqvist on 2018-04-28.
-//  Copyright © 2018 Melvin Lundqvist. All rights reserved.
+//  Created by Melvin Lundqvist & Philip Song on 2018-04-28.
+//  Copyright © 2018 Melvin Lundqvist & Philip Song. All rights reserved.
 //
 
 import UIKit
@@ -14,6 +14,10 @@ class GameViewController: UIViewController {
     
     var location = CGPoint(x: 0, y: 0)
     
+    //koppla ihop användarinterface med koden
+    @IBOutlet weak var bakgrund: UIImageView!
+    @IBOutlet weak var sushiTextlbl: UILabel!
+    @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var eater: UIImageView!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -35,7 +39,14 @@ class GameViewController: UIViewController {
         eater.center = location
         
     }
-
+    
+    @IBAction func playButtonPressed(_ sender: Any) {
+        playButton.isHidden = true
+        sushiTextlbl.isHidden = true
+        eater.isHidden = false
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
