@@ -11,9 +11,35 @@ import SpriteKit
 import GameplayKit
 
 class GameViewController: UIViewController {
+    
+    var location = CGPoint(x: 0, y: 0)
+    
+    @IBOutlet weak var eater: UIImageView!
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let touch : UITouch! = touches.first
+        
+        location = touch.location(in: self.view)
+        
+        eater.center = location
+        
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let touch : UITouch! = touches.first
+        
+        location = touch.location(in: self.view)
+        
+        eater.center = location
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        eater.center = CGPoint(x: 160, y: 330)
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'

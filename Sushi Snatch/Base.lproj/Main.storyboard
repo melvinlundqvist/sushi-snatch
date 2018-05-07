@@ -26,10 +26,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Eater" translatesAutoresizingMaskIntoConstraints="NO" id="Kli-dq-fEx">
-                                <rect key="frame" x="163" y="421" width="49" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2q-nI-Zae">
                                 <rect key="frame" x="106" y="287" width="162" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,6 +33,10 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eater" translatesAutoresizingMaskIntoConstraints="NO" id="A2N-lw-AdL">
+                                <rect key="frame" x="162" y="435" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eater" translatesAutoresizingMaskIntoConstraints="NO" id="wg2-KW-fjq">
                                 <rect key="frame" x="67" y="502" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,6 +51,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="eater" destination="A2N-lw-AdL" id="otQ-Xf-mvC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +63,7 @@
     <resources>
         <image name="Bakgrund" width="1080" height="1920"/>
         <image name="Eater" width="580" height="580"/>
+        <image name="eater" width="994" height="994"/>
         <image name="test" width="1080" height="1920"/>
     </resources>
 </document>
