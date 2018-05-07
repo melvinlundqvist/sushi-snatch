@@ -12,24 +12,45 @@ import GameplayKit
 
 class GameViewController: UIViewController {
     
-    //koppla ihop användarinterface med koden
+    var location = CGPoint(x: 0, y: 0)
     
+    //koppla ihop användarinterface med koden
     @IBOutlet weak var bakgrund: UIImageView!
     @IBOutlet weak var sushiTextlbl: UILabel!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var eater: UIImageView!
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let touch : UITouch! = touches.first
+        
+        location = touch.location(in: self.view)
+        
+        eater.center = location
+        
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let touch : UITouch! = touches.first
+        
+        location = touch.location(in: self.view)
+        
+        eater.center = location
+        
+    }
     
     @IBAction func playButtonPressed(_ sender: Any) {
         playButton.isHidden = true
         sushiTextlbl.isHidden = true
-        ätare.isHidden = false
+        eater.isHidden = false
         
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        eater.center = CGPoint(x: 160, y: 330)
         
         if let view = self.view as! SKView? {
             // Load the SKScene from 'GameScene.sks'
