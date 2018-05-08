@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    /*
+     connecting picture
+     **/
     @IBOutlet weak var bakgrund: UIImageView!
-    
     @IBOutlet weak var sushiTextlbl: UILabel! //ishidden
     @IBOutlet weak var bakgrundStartScreen: UIImageView!
     @IBOutlet weak var playButton: UIButton!
@@ -47,16 +49,10 @@ class ViewController: UIViewController {
         eater.center = location
     }
     
-    
-    
-    
-    
-    
-    
-    
+
     
     override func viewDidLoad() {
-        eater.center = CGPoint(x: 160, y: 400) //startposition
+        eater.center = CGPoint(x: 187, y: 466) //startposition
 
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
