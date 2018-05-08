@@ -15,14 +15,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var sushiTextlbl: UILabel! //ishidden
     @IBOutlet weak var bakgrundStartScreen: UIImageView!
     @IBOutlet weak var playButton: UIButton!
-    @IBOutlet weak var snatchlbl: UILabel!
+    @IBOutlet weak var snatch: UILabel!
+    
     
     
     
     
     @IBAction func playButtonIsPressed(_ sender: Any) {
         bakgrundStartScreen.isHidden = true
-        snatchlbl.isHidden = true
+        snatch.isHidden = true
         playButton.isHidden = true
         sushiTextlbl.isHidden = true
     }
