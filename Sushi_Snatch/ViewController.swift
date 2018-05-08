@@ -19,20 +19,31 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var snatch: UILabel!
     @IBOutlet weak var eater: UIImageView!
+    @IBOutlet weak var sushiBit1: UIImageView!
     
     
     
-    
-    
+    /*
+    takes action when "Play- button is pressed. Hides all the startscreen animations.
+    **/
     @IBAction func playButtonIsPressed(_ sender: Any) {
         bakgrundStartScreen.isHidden = true
         snatch.isHidden = true
         playButton.isHidden = true
         sushiTextlbl.isHidden = true
         eater.isHidden = false
+        sushiBit1.isHidden = false
+        
+        
+        UIView.animate(withDuration: 6, animations: {
+            self.sushiBit1.frame.origin.y += 700
+        }, completion: nil)
     }
+        
+        
     
-    //Melvins kod:
+    
+
     
     var location = CGPoint(x: 0, y: 0)
     var eaterHeight = 466
