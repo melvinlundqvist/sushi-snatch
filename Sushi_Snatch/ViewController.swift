@@ -35,24 +35,24 @@ class ViewController: UIViewController {
     //Melvins kod:
     
     var location = CGPoint(x: 0, y: 0)
-    
+    var eaterHeight = 466
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch : UITouch! = touches.first
         location = touch.location(in: self.view)
-        eater.center = location
+        eater.center = CGPoint(x: location.x, y: CGFloat(eaterHeight))
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch : UITouch! = touches.first
         location = touch.location(in: self.view)
-        eater.center = location
+        eater.center = CGPoint(x: location.x, y: CGFloat(eaterHeight))
     }
     
 
     
     override func viewDidLoad() {
-        eater.center = CGPoint(x: 187, y: 466) //startposition
+        eater.center = CGPoint(x: self.view.bounds.midX, y: CGFloat(eaterHeight)) //ätarens startposition
 
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
