@@ -51,6 +51,10 @@
                                     <action selector="playButtonIsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kgG-Wa-aTw"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eater" translatesAutoresizingMaskIntoConstraints="NO" id="Mz3-Pf-JM9">
+                                <rect key="frame" x="162" y="400" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -58,6 +62,7 @@
                     <connections>
                         <outlet property="bakgrund" destination="3mL-tL-Jun" id="UGX-mn-NV5"/>
                         <outlet property="bakgrundStartScreen" destination="aur-uP-nww" id="1V4-Xf-I1k"/>
+                        <outlet property="eater" destination="Mz3-Pf-JM9" id="r8X-sX-oRa"/>
                         <outlet property="playButton" destination="3Cm-Va-zLg" id="grU-7I-HC3"/>
                         <outlet property="snatch" destination="AtH-Yu-YuN" id="S9X-lx-TFt"/>
                         <outlet property="sushiTextlbl" destination="an6-24-tDM" id="9Eh-2O-y5j"/>
@@ -71,5 +76,6 @@
     <resources>
         <image name="bakgrund" width="1080" height="1920"/>
         <image name="bakgrund_startscreen" width="1080" height="1920"/>
+        <image name="eater" width="994" height="994"/>
     </resources>
 </document>
