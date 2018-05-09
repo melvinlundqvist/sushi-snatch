@@ -23,6 +23,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var eater: UIImageView!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var sushiBit1: UIImageView!
+    @IBOutlet weak var pow: UIImageView!
     
     
     
@@ -37,6 +38,7 @@ class GameViewController: UIViewController {
         sushiTextlbl.isHidden = true
         eater.isHidden = false
         sushiBit1.isHidden = false
+        pow.isHidden = true
         
         
         UIView.animate(withDuration: 6, animations: {

@@ -72,6 +72,7 @@
                         <outlet property="bakgrundStartScreen" destination="Ugr-pq-irl" id="RkL-GY-qgU"/>
                         <outlet property="eater" destination="Lej-og-ujp" id="qrA-De-cGh"/>
                         <outlet property="playButton" destination="P7o-fh-2GQ" id="b5u-Tf-bnD"/>
+                        <outlet property="pow" destination="L8M-Ba-tTT" id="Sco-Rs-0U6"/>
                         <outlet property="snatch" destination="VqO-nw-UOH" id="4D3-ZM-hg8"/>
                         <outlet property="sushiBit1" destination="lLZ-YV-jxh" id="OMA-Nz-9hm"/>
                         <outlet property="sushiTextlbl" destination="ers-VS-Mhq" id="ZL3-Xl-H8u"/>
