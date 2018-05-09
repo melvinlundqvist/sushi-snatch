@@ -40,9 +40,8 @@ class GameViewController: UIViewController {
         
         
         UIView.animate(withDuration: 6, animations: {
-            self.sushiBit1.frame.origin.y += 700
+            self.sushiBit1.frame.origin.y += 900
         }, completion: nil)
-        
     }
     
 
