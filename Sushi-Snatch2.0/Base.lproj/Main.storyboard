@@ -59,7 +59,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ox1-Ia-ilT" userLabel="playButton">
                                 <rect key="frame" x="112" y="360" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="playButton"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="playButtonIsPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="01K-YK-W48"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PLAY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIb-Ju-tbH">
                                 <rect key="frame" x="140" y="411" width="107" height="48"/>
@@ -78,7 +81,7 @@
                         <outlet property="bakgrund" destination="dVN-ZQ-Ggp" id="BO2-eJ-I16"/>
                         <outlet property="bakgrundStartScreen" destination="Ugr-pq-irl" id="RkL-GY-qgU"/>
                         <outlet property="eater" destination="Lej-og-ujp" id="qrA-De-cGh"/>
-                        <outlet property="playButton" destination="Ox1-Ia-ilT" id="tho-lr-H6C"/>
+                        <outlet property="playButton" destination="Ox1-Ia-ilT" id="KwG-RS-Yk2"/>
                         <outlet property="playLabel" destination="kIb-Ju-tbH" id="jps-t9-muq"/>
                         <outlet property="pow" destination="L8M-Ba-tTT" id="Sco-Rs-0U6"/>
                         <outlet property="snatch" destination="VqO-nw-UOH" id="4D3-ZM-hg8"/>
@@ -95,7 +98,7 @@
         <image name="bakgrund" width="1080" height="1920"/>
         <image name="bakgrund_startscreen" width="1080" height="1920"/>
         <image name="eater" width="994" height="994"/>
-        <image name="playButton" width="677" height="677"/>
+        <image name="play" width="677" height="677"/>
         <image name="pow" width="874" height="766"/>
         <image name="sushiBit1" width="64" height="64"/>
     </resources>

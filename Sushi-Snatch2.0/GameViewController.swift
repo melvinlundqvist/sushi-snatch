@@ -26,14 +26,10 @@ class GameViewController: UIViewController {
     @IBOutlet weak var playLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     
-    
-    
-    
     /*
      takes action when "Play- button is pressed. Hides all the startscreen animations.
      **/
     @IBAction func playButtonIsPressed(_ sender: Any) {
-        
         //stuff that fades out
         UIView.animate(withDuration: 0.5, animations: {
             self.bakgrundStartScreen.alpha = 0
@@ -74,14 +70,6 @@ class GameViewController: UIViewController {
         let touch : UITouch! = touches.first
         location = touch.location(in: self.view)
         eater.center = CGPoint(x: location.x, y: CGFloat(eaterHeight))
-    }
-    
-    func collision() {
-        while 0==0{
-            if sushiBit1.frame.intersects(eater.frame) {
-                self.sushiBit1.isHidden = true
-            }
-        }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
