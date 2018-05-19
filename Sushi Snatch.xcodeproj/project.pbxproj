@@ -19,6 +19,7 @@
 		156F27D320AC510F00AC4694 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F27D220AC510F00AC4694 /* MainMenuScene.swift */; };
 		156F27D520AC54F200AC4694 /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156F27D420AC54F200AC4694 /* GameplayScene.sks */; };
 		156F27D720AC551E00AC4694 /* GameplaySceneClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F27D620AC551E00AC4694 /* GameplaySceneClass.swift */; };
+		ED01DF5520B0461C00DFA33C /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED01DF5420B0461C00DFA33C /* ItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		156F27D220AC510F00AC4694 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
 		156F27D420AC54F200AC4694 /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 		156F27D620AC551E00AC4694 /* GameplaySceneClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplaySceneClass.swift; sourceTree = "<group>"; };
+		ED01DF5420B0461C00DFA33C /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		156F27D020AC50D500AC4694 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				ED01DF5320B045FA00DFA33C /* Items Controller Classes */,
 				156F27D120AC50DF00AC4694 /* Scene Classes */,
 			);
 			path = Classes;
@@ -162,6 +165,14 @@
 				156F27D620AC551E00AC4694 /* GameplaySceneClass.swift */,
 			);
 			path = "Scene Classes";
+			sourceTree = "<group>";
+		};
+		ED01DF5320B045FA00DFA33C /* Items Controller Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ED01DF5420B0461C00DFA33C /* ItemController.swift */,
+			);
+			path = "Items Controller Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +312,7 @@
 				156F27D320AC510F00AC4694 /* MainMenuScene.swift in Sources */,
 				156F27A220AC4DF900AC4694 /* GameViewController.swift in Sources */,
 				156F279A20AC4DF900AC4694 /* AppDelegate.swift in Sources */,
+				ED01DF5520B0461C00DFA33C /* ItemController.swift in Sources */,
 				156F27D720AC551E00AC4694 /* GameplaySceneClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

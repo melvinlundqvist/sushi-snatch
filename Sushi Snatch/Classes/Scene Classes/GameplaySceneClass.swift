@@ -15,6 +15,9 @@ class GameplaySceneClass: SKScene {
     var eaterMinX = CGFloat(-200)
     var eaterMaxX = CGFloat(200)
     
+    private var itemController = ItemController()
+    
+    
     override func didMove(to view: SKView) {
         initializeGame()
     }
@@ -22,7 +25,11 @@ class GameplaySceneClass: SKScene {
     private func initializeGame() {
         eater.position = CGPoint(x: 0, y: eaterHeight)
         eater.setScale(0.06)
+        eater.zPosition = 4
         self.addChild(eater)
+        
+        Timer.scheduledTimer(timeInterval: TimeInterval (1), target: self, selector: #selector(GameplaySceneClass.spawnItems), userInfo: nil, repeats: true)
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -54,6 +61,11 @@ class GameplaySceneClass: SKScene {
             }
             eater.position = CGPoint(x: xPos, y: eaterHeight)
         }
+        
+    }
+    
+    @objc func spawnItems() {
+        self.scene?.addChild(itemController.spawnItems(scene: self.scene!))
         
     }
     
