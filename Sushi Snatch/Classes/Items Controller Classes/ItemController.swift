@@ -9,7 +9,7 @@
 import SpriteKit
 
 struct ColliderType { //like a class - struct
-    static let EATER: UInt32 = 0 //can accessed in the class without instancint it
+    static let EATER_AND_WATER: UInt32 = 0 //can accessed in the class without instancint it
     static let SUCHIPIECE: UInt32 = 1
 }
 
@@ -28,6 +28,8 @@ class ItemController {
         item!.setScale(0.7)
         item!.physicsBody = SKPhysicsBody(circleOfRadius: item!.size.height / 2)
         item!.physicsBody?.categoryBitMask = ColliderType.SUCHIPIECE
+        item!.physicsBody?.collisionBitMask = ColliderType.EATER_AND_WATER
+        item!.physicsBody?.contactTestBitMask = ColliderType.EATER_AND_WATER
         item!.zPosition = 5
         item!.anchorPoint = CGPoint(x: 0.5, y: 0.5)
         item!.position.x = randomBetweenNumbers(firstNum: eaterMinX, lastNum: eaterMaxX)

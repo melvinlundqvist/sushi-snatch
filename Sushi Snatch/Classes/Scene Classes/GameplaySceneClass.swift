@@ -6,6 +6,9 @@
 //  Copyright © 2018 Melphi. All rights reserved.
 //
 
+
+
+//vi la precis till collisionbitmask på alla ställen,gjorde ingen skillnad
 import SpriteKit
 
 class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
@@ -14,8 +17,13 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
     var eaterHeight = CGFloat(-165)
     var eaterMinX = CGFloat(-200)
     var eaterMaxX = CGFloat(200)
+    var water = SKSpriteNode(color: SKColor.red, size: CGSize(width: 480, height: 10))
+
     
     private var itemController = ItemController()
+    
+    private var scoreLabel: SKLabelNode?
+    private var score = 0
     
     override func didMove(to view: SKView) {
         initializeGame()
@@ -56,30 +64,43 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
     func didBegin(_ contact: SKPhysicsContact) {
         var firstBody = SKPhysicsBody()
         var secondBody = SKPhysicsBody()
-        if contact.bodyA.node?.name == "eater" {
+        if contact.bodyA.node?.name == "Sushi-piece" {
             firstBody = contact.bodyA
             secondBody = contact.bodyB
-        } else {
+            print("ja")
+        }
+        else{
             firstBody = contact.bodyB
             secondBody = contact.bodyA
-        }
-        
-        if firstBody.node?.name == "eater" && secondBody.node?.name == "Sushi-piece" {
-            
+            print(firstBody.node?.name, secondBody.node?.name)
         }
         
         
+        if firstBody.node?.name == "Sushi-piece" && secondBody.node?.name == "Eater" {
+            score += 1
+            scoreLabel?.text = String(score)
+            firstBody.node?.removeFromParent()
+        }
+        
+            //One sushi piece has reached the water
+        if firstBody.node?.name == "Eater" && secondBody.node?.name == "water" {
+            restartGame()
+        }
+        print("hje")
     }
     
     private func initializeGame() {
         
         physicsWorld.contactDelegate = self
-        
+        eater.name = "Eater"
         eater.position = CGPoint(x: 0, y: eaterHeight)
         eater.setScale(0.06)
         eater.zPosition = 3
         self.addChild(eater)
         initializeEater()
+        initializeWater()
+        scoreLabel = childNode(withName: "ScoreLabel") as? SKLabelNode!
+        scoreLabel?.text = "0"
         
         Timer.scheduledTimer(timeInterval: TimeInterval(0.8), target: self, selector: #selector(GameplaySceneClass.spawnItems), userInfo: nil, repeats: true)
     }
@@ -87,9 +108,24 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
     private func initializeEater() {
         eater.physicsBody = SKPhysicsBody(circleOfRadius: eater.size.height / 2)
         eater.physicsBody?.isDynamic = false
-        eater.physicsBody?.categoryBitMask = ColliderType.EATER
+        eater.physicsBody?.categoryBitMask = ColliderType.EATER_AND_WATER
         eater.physicsBody?.contactTestBitMask = ColliderType.SUCHIPIECE
-        
+        eater.physicsBody?.collisionBitMask = ColliderType.SUCHIPIECE
+
+    }
+    
+    private func initializeWater() {
+        water.name = "water"
+
+        water.physicsBody?.isDynamic = false
+        water.physicsBody?.categoryBitMask = ColliderType.EATER_AND_WATER
+        water.physicsBody?.contactTestBitMask = ColliderType.SUCHIPIECE
+        water.physicsBody?.collisionBitMask = ColliderType.SUCHIPIECE
+        water.position = CGPoint(x: 0, y: -400)
+        water.zPosition = 7
+        water.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+        water.setScale(1)
+        self.addChild(water)
     }
     
     @objc func spawnItems() {
