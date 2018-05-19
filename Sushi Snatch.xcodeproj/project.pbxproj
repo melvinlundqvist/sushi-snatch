@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		156F279A20AC4DF900AC4694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F279920AC4DF900AC4694 /* AppDelegate.swift */; };
+		156F279E20AC4DF900AC4694 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156F279D20AC4DF900AC4694 /* Actions.sks */; };
+		156F27A220AC4DF900AC4694 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F27A120AC4DF900AC4694 /* GameViewController.swift */; };
+		156F27A520AC4DF900AC4694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156F27A320AC4DF900AC4694 /* Main.storyboard */; };
+		156F27A720AC4DFA00AC4694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 156F27A620AC4DFA00AC4694 /* Assets.xcassets */; };
+		156F27AA20AC4DFB00AC4694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 156F27A820AC4DFB00AC4694 /* LaunchScreen.storyboard */; };
+		156F27B520AC4DFB00AC4694 /* Sushi_SnatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F27B420AC4DFB00AC4694 /* Sushi_SnatchTests.swift */; };
+		156F27C020AC4DFB00AC4694 /* Sushi_SnatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F27BF20AC4DFB00AC4694 /* Sushi_SnatchUITests.swift */; };
+		156F27CF20AC50C000AC4694 /* MainMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156F27CE20AC50C000AC4694 /* MainMenu.sks */; };
+		156F27D320AC510F00AC4694 /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F27D220AC510F00AC4694 /* MainMenuScene.swift */; };
+		156F27D520AC54F200AC4694 /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156F27D420AC54F200AC4694 /* GameplayScene.sks */; };
+		156F27D720AC551E00AC4694 /* GameplaySceneClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F27D620AC551E00AC4694 /* GameplaySceneClass.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		156F27B120AC4DFB00AC4694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 156F278E20AC4DF900AC4694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 156F279520AC4DF900AC4694;
+			remoteInfo = "Sushi Snatch";
+		};
+		156F27BC20AC4DFB00AC4694 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 156F278E20AC4DF900AC4694 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 156F279520AC4DF900AC4694;
+			remoteInfo = "Sushi Snatch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		156F279620AC4DF900AC4694 /* Sushi Snatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sushi Snatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		156F279920AC4DF900AC4694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		156F279D20AC4DF900AC4694 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		156F27A120AC4DF900AC4694 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		156F27A420AC4DF900AC4694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		156F27A620AC4DFA00AC4694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		156F27A920AC4DFB00AC4694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		156F27AB20AC4DFB00AC4694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		156F27B020AC4DFB00AC4694 /* Sushi SnatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sushi SnatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		156F27B420AC4DFB00AC4694 /* Sushi_SnatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_SnatchTests.swift; sourceTree = "<group>"; };
+		156F27B620AC4DFB00AC4694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		156F27BB20AC4DFB00AC4694 /* Sushi SnatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sushi SnatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		156F27BF20AC4DFB00AC4694 /* Sushi_SnatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sushi_SnatchUITests.swift; sourceTree = "<group>"; };
+		156F27C120AC4DFB00AC4694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		156F27CE20AC50C000AC4694 /* MainMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MainMenu.sks; sourceTree = "<group>"; };
+		156F27D220AC510F00AC4694 /* MainMenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		156F27D420AC54F200AC4694 /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
+		156F27D620AC551E00AC4694 /* GameplaySceneClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplaySceneClass.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		156F279320AC4DF900AC4694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156F27AD20AC4DFB00AC4694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156F27B820AC4DFB00AC4694 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		156F278D20AC4DF900AC4694 = {
+			isa = PBXGroup;
+			children = (
+				156F279820AC4DF900AC4694 /* Sushi Snatch */,
+				156F27B320AC4DFB00AC4694 /* Sushi SnatchTests */,
+				156F27BE20AC4DFB00AC4694 /* Sushi SnatchUITests */,
+				156F279720AC4DF900AC4694 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		156F279720AC4DF900AC4694 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				156F279620AC4DF900AC4694 /* Sushi Snatch.app */,
+				156F27B020AC4DFB00AC4694 /* Sushi SnatchTests.xctest */,
+				156F27BB20AC4DFB00AC4694 /* Sushi SnatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		156F279820AC4DF900AC4694 /* Sushi Snatch */ = {
+			isa = PBXGroup;
+			children = (
+				156F27D020AC50D500AC4694 /* Classes */,
+				156F27CD20AC508B00AC4694 /* Scenes */,
+				156F279920AC4DF900AC4694 /* AppDelegate.swift */,
+				156F279D20AC4DF900AC4694 /* Actions.sks */,
+				156F27A120AC4DF900AC4694 /* GameViewController.swift */,
+				156F27A320AC4DF900AC4694 /* Main.storyboard */,
+				156F27A620AC4DFA00AC4694 /* Assets.xcassets */,
+				156F27A820AC4DFB00AC4694 /* LaunchScreen.storyboard */,
+				156F27AB20AC4DFB00AC4694 /* Info.plist */,
+			);
+			path = "Sushi Snatch";
+			sourceTree = "<group>";
+		};
+		156F27B320AC4DFB00AC4694 /* Sushi SnatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				156F27B420AC4DFB00AC4694 /* Sushi_SnatchTests.swift */,
+				156F27B620AC4DFB00AC4694 /* Info.plist */,
+			);
+			path = "Sushi SnatchTests";
+			sourceTree = "<group>";
+		};
+		156F27BE20AC4DFB00AC4694 /* Sushi SnatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				156F27BF20AC4DFB00AC4694 /* Sushi_SnatchUITests.swift */,
+				156F27C120AC4DFB00AC4694 /* Info.plist */,
+			);
+			path = "Sushi SnatchUITests";
+			sourceTree = "<group>";
+		};
+		156F27CD20AC508B00AC4694 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				156F27CE20AC50C000AC4694 /* MainMenu.sks */,
+				156F27D420AC54F200AC4694 /* GameplayScene.sks */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		156F27D020AC50D500AC4694 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				156F27D120AC50DF00AC4694 /* Scene Classes */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		156F27D120AC50DF00AC4694 /* Scene Classes */ = {
+			isa = PBXGroup;
+			children = (
+				156F27D220AC510F00AC4694 /* MainMenuScene.swift */,
+				156F27D620AC551E00AC4694 /* GameplaySceneClass.swift */,
+			);
+			path = "Scene Classes";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		156F279520AC4DF900AC4694 /* Sushi Snatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156F27C420AC4DFB00AC4694 /* Build configuration list for PBXNativeTarget "Sushi Snatch" */;
+			buildPhases = (
+				156F279220AC4DF900AC4694 /* Sources */,
+				156F279320AC4DF900AC4694 /* Frameworks */,
+				156F279420AC4DF900AC4694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sushi Snatch";
+			productName = "Sushi Snatch";
+			productReference = 156F279620AC4DF900AC4694 /* Sushi Snatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		156F27AF20AC4DFB00AC4694 /* Sushi SnatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156F27C720AC4DFB00AC4694 /* Build configuration list for PBXNativeTarget "Sushi SnatchTests" */;
+			buildPhases = (
+				156F27AC20AC4DFB00AC4694 /* Sources */,
+				156F27AD20AC4DFB00AC4694 /* Frameworks */,
+				156F27AE20AC4DFB00AC4694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				156F27B220AC4DFB00AC4694 /* PBXTargetDependency */,
+			);
+			name = "Sushi SnatchTests";
+			productName = "Sushi SnatchTests";
+			productReference = 156F27B020AC4DFB00AC4694 /* Sushi SnatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		156F27BA20AC4DFB00AC4694 /* Sushi SnatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 156F27CA20AC4DFB00AC4694 /* Build configuration list for PBXNativeTarget "Sushi SnatchUITests" */;
+			buildPhases = (
+				156F27B720AC4DFB00AC4694 /* Sources */,
+				156F27B820AC4DFB00AC4694 /* Frameworks */,
+				156F27B920AC4DFB00AC4694 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				156F27BD20AC4DFB00AC4694 /* PBXTargetDependency */,
+			);
+			name = "Sushi SnatchUITests";
+			productName = "Sushi SnatchUITests";
+			productReference = 156F27BB20AC4DFB00AC4694 /* Sushi SnatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		156F278E20AC4DF900AC4694 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Melphi;
+				TargetAttributes = {
+					156F279520AC4DF900AC4694 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					156F27AF20AC4DFB00AC4694 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 156F279520AC4DF900AC4694;
+					};
+					156F27BA20AC4DFB00AC4694 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 156F279520AC4DF900AC4694;
+					};
+				};
+			};
+			buildConfigurationList = 156F279120AC4DF900AC4694 /* Build configuration list for PBXProject "Sushi Snatch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 156F278D20AC4DF900AC4694;
+			productRefGroup = 156F279720AC4DF900AC4694 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				156F279520AC4DF900AC4694 /* Sushi Snatch */,
+				156F27AF20AC4DFB00AC4694 /* Sushi SnatchTests */,
+				156F27BA20AC4DFB00AC4694 /* Sushi SnatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		156F279420AC4DF900AC4694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156F27A520AC4DF900AC4694 /* Main.storyboard in Resources */,
+				156F27A720AC4DFA00AC4694 /* Assets.xcassets in Resources */,
+				156F27AA20AC4DFB00AC4694 /* LaunchScreen.storyboard in Resources */,
+				156F27CF20AC50C000AC4694 /* MainMenu.sks in Resources */,
+				156F27D520AC54F200AC4694 /* GameplayScene.sks in Resources */,
+				156F279E20AC4DF900AC4694 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156F27AE20AC4DFB00AC4694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156F27B920AC4DFB00AC4694 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		156F279220AC4DF900AC4694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156F27D320AC510F00AC4694 /* MainMenuScene.swift in Sources */,
+				156F27A220AC4DF900AC4694 /* GameViewController.swift in Sources */,
+				156F279A20AC4DF900AC4694 /* AppDelegate.swift in Sources */,
+				156F27D720AC551E00AC4694 /* GameplaySceneClass.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156F27AC20AC4DFB00AC4694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156F27B520AC4DFB00AC4694 /* Sushi_SnatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		156F27B720AC4DFB00AC4694 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				156F27C020AC4DFB00AC4694 /* Sushi_SnatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		156F27B220AC4DFB00AC4694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 156F279520AC4DF900AC4694 /* Sushi Snatch */;
+			targetProxy = 156F27B120AC4DFB00AC4694 /* PBXContainerItemProxy */;
+		};
+		156F27BD20AC4DFB00AC4694 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 156F279520AC4DF900AC4694 /* Sushi Snatch */;
+			targetProxy = 156F27BC20AC4DFB00AC4694 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		156F27A320AC4DF900AC4694 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				156F27A420AC4DF900AC4694 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		156F27A820AC4DFB00AC4694 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				156F27A920AC4DFB00AC4694 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		156F27C220AC4DFB00AC4694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		156F27C320AC4DFB00AC4694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		156F27C520AC4DFB00AC4694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T8TZ283T;
+				INFOPLIST_FILE = "Sushi Snatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "melphi.Sushi-Snatch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		156F27C620AC4DFB00AC4694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T8TZ283T;
+				INFOPLIST_FILE = "Sushi Snatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "melphi.Sushi-Snatch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		156F27C820AC4DFB00AC4694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T8TZ283T;
+				INFOPLIST_FILE = "Sushi SnatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "melphi.Sushi-SnatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sushi Snatch.app/Sushi Snatch";
+			};
+			name = Debug;
+		};
+		156F27C920AC4DFB00AC4694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T8TZ283T;
+				INFOPLIST_FILE = "Sushi SnatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "melphi.Sushi-SnatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sushi Snatch.app/Sushi Snatch";
+			};
+			name = Release;
+		};
+		156F27CB20AC4DFB00AC4694 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T8TZ283T;
+				INFOPLIST_FILE = "Sushi SnatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "melphi.Sushi-SnatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sushi Snatch";
+			};
+			name = Debug;
+		};
+		156F27CC20AC4DFB00AC4694 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 64T8TZ283T;
+				INFOPLIST_FILE = "Sushi SnatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "melphi.Sushi-SnatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sushi Snatch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		156F279120AC4DF900AC4694 /* Build configuration list for PBXProject "Sushi Snatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156F27C220AC4DFB00AC4694 /* Debug */,
+				156F27C320AC4DFB00AC4694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		156F27C420AC4DFB00AC4694 /* Build configuration list for PBXNativeTarget "Sushi Snatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156F27C520AC4DFB00AC4694 /* Debug */,
+				156F27C620AC4DFB00AC4694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		156F27C720AC4DFB00AC4694 /* Build configuration list for PBXNativeTarget "Sushi SnatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156F27C820AC4DFB00AC4694 /* Debug */,
+				156F27C920AC4DFB00AC4694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		156F27CA20AC4DFB00AC4694 /* Build configuration list for PBXNativeTarget "Sushi SnatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				156F27CB20AC4DFB00AC4694 /* Debug */,
+				156F27CC20AC4DFB00AC4694 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 156F278E20AC4DF900AC4694 /* Project object */;
+}
