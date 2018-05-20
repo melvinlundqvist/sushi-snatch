@@ -22,6 +22,7 @@
 		156F27D520AC54F200AC4694 /* GameplayScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 156F27D420AC54F200AC4694 /* GameplayScene.sks */; };
 		156F27D720AC551E00AC4694 /* GameplaySceneClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156F27D620AC551E00AC4694 /* GameplaySceneClass.swift */; };
 		ED01DF5520B0461C00DFA33C /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED01DF5420B0461C00DFA33C /* ItemController.swift */; };
+		ED6C683920B1B19B00AF95BA /* sushi_snatch_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ED6C683820B1B19A00AF95BA /* sushi_snatch_music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		156F27D420AC54F200AC4694 /* GameplayScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameplayScene.sks; sourceTree = "<group>"; };
 		156F27D620AC551E00AC4694 /* GameplaySceneClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplaySceneClass.swift; sourceTree = "<group>"; };
 		ED01DF5420B0461C00DFA33C /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
+		ED6C683820B1B19A00AF95BA /* sushi_snatch_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sushi_snatch_music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				156F27CD20AC508B00AC4694 /* Scenes */,
 				156F279920AC4DF900AC4694 /* AppDelegate.swift */,
 				156F279D20AC4DF900AC4694 /* Actions.sks */,
+				ED6C683820B1B19A00AF95BA /* sushi_snatch_music.mp3 */,
 				156F27A120AC4DF900AC4694 /* GameViewController.swift */,
 				156F27A320AC4DF900AC4694 /* Main.storyboard */,
 				156F27A620AC4DFA00AC4694 /* Assets.xcassets */,
@@ -285,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6C683920B1B19B00AF95BA /* sushi_snatch_music.mp3 in Resources */,
 				1522237A20B16462005576C8 /* GameOverScene.sks in Resources */,
 				156F27A520AC4DF900AC4694 /* Main.storyboard in Resources */,
 				156F27A720AC4DFA00AC4694 /* Assets.xcassets in Resources */,

@@ -10,6 +10,16 @@ import SpriteKit
 
 class MainMenuScene: SKScene {
     
+    private var pow = SKSpriteNode(imageNamed: "pow1")
+    
+    override func didMove(to view: SKView) {
+        pow.name = "pow1"
+        pow.setScale(0.2)
+        pow.zPosition = 5
+        pow.position = CGPoint(x: 0, y: 100)
+        addChild(pow)
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         for touch in touches {

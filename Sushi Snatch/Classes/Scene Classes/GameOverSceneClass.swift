@@ -13,11 +13,11 @@ class GameOverSceneClass: SKScene {
     private var scoreLabel: SKLabelNode?
     private var restartLabel: SKLabelNode?
     private var mainMenuLabel: SKLabelNode?
-    
+    private var score = 0
     
     override func didMove(to view: SKView) {
         scoreLabel = (childNode(withName: "ScoreLabel") as? SKLabelNode?)!
-        scoreLabel?.text = "Highscore: X"
+        scoreLabel?.text = "Final score: " + String(score)
         scoreLabel?.isHidden = false
         restartLabel = (childNode(withName: "RestartLabel") as? SKLabelNode?)!
         mainMenuLabel = (childNode(withName: "MainMenuLabel") as? SKLabelNode?)!
@@ -42,7 +42,9 @@ class GameOverSceneClass: SKScene {
         
     }
     
-    
+    func setFinalScore(finalScore: Int) {
+        score = finalScore
+    }
     
     
     

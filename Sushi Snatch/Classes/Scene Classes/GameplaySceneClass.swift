@@ -8,7 +8,7 @@
 
 
 
-import SpriteKit
+import SpriteKit; import AVFoundation;
 
 class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
     
@@ -22,7 +22,23 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
     private var scoreLabel: SKLabelNode?
     private var score = 0
     
+    //music
+    //var audioPlayer = AVAudioPlayer()
+    var backgroundMusic: AVAudioPlayer?
+    
+    
+    
     override func didMove(to view: SKView) {
+        score = 0
+        let path = Bundle.main.path(forResource: "sushi_snatch_music.mp3", ofType: nil)!
+        let url = URL(fileURLWithPath: path)
+        
+        do {
+            backgroundMusic = try AVAudioPlayer(contentsOf: url)
+            backgroundMusic?.play()
+        } catch {
+            // couldn't load file :(
+        }
         initializeGame()
     }
     
@@ -82,6 +98,9 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
     
     private func initializeGame() {
         
+        
+        
+        
         physicsWorld.contactDelegate = self
         
         initializeEater()
@@ -132,7 +151,9 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
     
     func restartGame() {
         if let scene = GameOverSceneClass(fileNamed: "GameOverScene") {
+            backgroundMusic?.stop()
             scene.scaleMode = .aspectFill
+            scene.setFinalScore(finalScore: score)
             view?.presentScene(scene, transition: SKTransition.doorsCloseHorizontal(withDuration: TimeInterval(1)))
         }
     }
