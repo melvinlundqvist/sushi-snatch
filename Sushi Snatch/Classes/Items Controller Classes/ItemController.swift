@@ -2,7 +2,7 @@
 //  ItemController.swift
 //  Sushi Snatch
 //
-//  Created by Philip Song on 2018-05-19.
+//  Created by Philip Song & Melvin Lundqviston 2018-05-19.
 //  Copyright © 2018 Melphi. All rights reserved.
 //
 

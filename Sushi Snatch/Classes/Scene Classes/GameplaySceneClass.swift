@@ -2,7 +2,7 @@
 //  GameplaySceneClass.swift
 //  Sushi Snatch
 //
-//  Created by Melvin Lundqvist on 2018-05-16.
+//  Created by Philip Song & Melvin Lundqvist on 2018-05-16.
 //  Copyright © 2018 Melphi. All rights reserved.
 //
 

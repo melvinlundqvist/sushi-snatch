@@ -2,7 +2,7 @@
 //  MainMenuScene.swift
 //  Sushi Snatch
 //
-//  Created by Melvin Lundqvist on 2018-05-16.
+//  Created by Melvin Lundqvist & Philip Song on 2018-05-16.
 //  Copyright © 2018 Melphi. All rights reserved.
 //
 
