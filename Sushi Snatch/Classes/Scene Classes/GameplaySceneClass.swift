@@ -26,8 +26,6 @@ class GameplaySceneClass: SKScene, SKPhysicsContactDelegate {
     //var audioPlayer = AVAudioPlayer()
     var backgroundMusic: AVAudioPlayer?
     
-    
-    
     override func didMove(to view: SKView) {
         score = 0
         let path = Bundle.main.path(forResource: "sushi_snatch_music.mp3", ofType: nil)!
