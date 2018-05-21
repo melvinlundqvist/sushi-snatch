@@ -14,11 +14,10 @@ class MainMenuScene: SKScene {
     
     override func didMove(to view: SKView) {
         pow.name = "pow1"
-        pow.setScale(0.36)
+        pow.setScale(0.38)
         pow.zPosition = 5
-        pow.position = CGPoint(x: 0, y: 210)
+        pow.position = CGPoint(x: 0, y: 158)
         addChild(pow)
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
